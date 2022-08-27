@@ -1,0 +1,56 @@
+.home-page {
+  margin: 4rem;
+}
+
+.category-name {
+  text-align: center;
+  padding: 3px;
+  background-color: 343a40;
+  width: 30%;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  color: edf2f4;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.products-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+  align-content: center;
+}
+
+.product {
+  box-shadow: 0 3px 6px 0 darkgrey;
+}
+
+.product p {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product img {
+  height: 200px;
+}
+
+.product {
+  text-decoration-color: black;
+  margin: 0.5rem;
+}
+
+.see-more a {
+  color: black;
+  text-decoration: none;
+}
+
+.see-more a:hover,
+.product p:hover {
+  color: darkgrey;
+}
+
+.see-more {
+  text-align: end;
+}

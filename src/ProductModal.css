@@ -1,0 +1,52 @@
+#ProductModal .modalBackground {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#ProductModal .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: 600px;
+  perspective: 800px;
+  z-index: 10;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+#ProductModal .modal-content {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ProductModal .modal-content img {
+  width: 350px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+#ProductModal .modal-content > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+}
+
+#ProductModal .modal-content > div > div {
+  display: flex;
+  flex-direction: row;
+}

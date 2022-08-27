@@ -1,0 +1,24 @@
+#signIn form > * {
+  margin: 0.5rem;
+}
+
+#signIn,
+#signIn form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#SignIn p {
+  margin: 0.3rem;
+  font-size: 0.8rem;
+}
+
+#SignIn p > span {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+#SignIn p > span:hover {
+  cursor: pointer;
+}

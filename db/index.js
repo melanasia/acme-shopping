@@ -6,10 +6,26 @@ const LineItem = require("./LineItem");
 const Order = require("./Order");
 const Genre = require("./Genre");
 const Category = require("./Category");
+const Address = require("./Address");
 
-User.hasMany(Order);
+User.hasMany(Order, {
+  foreignKey: {
+    allowNull: false,
+  },
+});
 Order.hasMany(LineItem);
 LineItem.belongsTo(Product);
+Address.belongsTo(User);
+Product.belongsTo(Category, {
+  foreignKey: {
+    allowNull: false,
+  },
+});
+Product.belongsTo(Genre, {
+  foreignKey: {
+    allowNull: false,
+  },
+});
 
 module.exports = {
   conn,
@@ -17,4 +33,7 @@ module.exports = {
   Product,
   LineItem,
   Order,
+  Genre,
+  Category,
+  Address,
 };

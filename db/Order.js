@@ -1,12 +1,16 @@
-const conn = require('./conn');
+const conn = require("./conn");
 const { Sequelize } = conn;
 
-const Order = conn.define('order', {
+const Order = conn.define("order", {
   isCart: {
+    allowNull: false,
     type: Sequelize.BOOLEAN,
-    defaultValue: true
-  }
+    defaultValue: true,
+  },
+  orderDate: {
+    type: Sequelize.DATEONLY,
+    allowNull: false,
+  },
 });
 
 module.exports = Order;
-

@@ -1,0 +1,137 @@
+.checkoutForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkoutForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkoutForm .addressForm {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkoutForm .addressForm > * {
+  flex-grow: 1;
+}
+
+.checkoutForm form > * > * {
+  margin: 0.7rem;
+}
+
+.state {
+  max-width: 5rem;
+}
+
+.checkoutForm .zipCode {
+  max-width: 8rem;
+}
+
+.cardElement {
+  width: 30rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.7rem;
+  border: solid 1px rgb(195, 195, 195);
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+#checkout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#checkout > div:first-child {
+  /* width: 30%; */
+  padding: 0rem 2rem;
+}
+
+#checkout > div {
+  flex-grow: 1;
+}
+
+#checkout .lineItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+#checkout .lineItem > *:first-child {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#checkout .lineItem > *:last-child {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#checkout img {
+  width: 5rem;
+}
+
+#checkout .cart > h2 {
+  text-align: center;
+}
+
+#checkout .cartItems {
+  min-height: 150px;
+  max-height: 550px;
+  overflow-y: auto;
+}
+
+#checkout h4 {
+  margin: 0;
+}
+
+#checkout .cartFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#checkout .cart {
+  min-width: 35rem;
+}
+
+#checkout .addresses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 40rem;
+}
+
+#checkout .address {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+#checkout .address h4 {
+  padding: 0.2rem;
+  overflow: hidden;
+}

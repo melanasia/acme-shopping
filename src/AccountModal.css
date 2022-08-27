@@ -1,0 +1,57 @@
+#accountModal .modalBackground {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#accountModal .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  /* background: white; */
+  /* color: white; */
+  perspective: 800px;
+  z-index: 10;
+  border-radius: 16px;
+  /* box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04); */
+}
+
+.sides {
+  width: 100%;
+  height: 100%;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.sides.isFlipped {
+  transform: rotateY(180deg);
+}
+
+.side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  color: black;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.signIn {
+  background-color: white;
+}
+
+.signUp {
+  background-color: white;
+  transform: rotateY(180deg);
+}

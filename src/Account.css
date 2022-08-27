@@ -1,0 +1,211 @@
+#account-page {
+  margin: 3rem;
+}
+#account-page > h2 {
+  margin-left: 15rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  min-width: 12rem;
+  border-right: 2px solid black;
+  margin-right: 2rem;
+}
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  background-color: 343a40;
+  color: edf2f4;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
+.selected {
+  background-color: rgb(142, 141, 141);
+}
+
+.container {
+  display: flex;
+}
+
+.personal-info {
+  display: grid;
+  border-collapse: collapse;
+}
+.personal-info tr {
+  border-bottom: 1px solid black;
+}
+.personal-info td {
+  padding: 1rem;
+  border: none;
+}
+i {
+  margin: 1rem 0 0 1rem;
+  cursor: pointer;
+  color: 343a40;
+}
+
+.edit-form,
+.address-form {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 2rem 0 0 14rem;
+}
+
+.edit-form > * {
+  margin: 5px;
+}
+
+.edit-form button {
+  height: 30px;
+  background-color: 343a40;
+  color: edf2f4;
+  font-weight: bold;
+  cursor: pointer;
+  width: 20rem;
+  margin-left: 0;
+}
+
+.edit-form button:hover,
+nav a:hover,
+.address-form button:hover {
+  background-color: rgb(142, 141, 141);
+}
+
+.address,
+.add-address {
+  border: 1px solid black;
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0;
+  margin: 1rem;
+}
+
+.address button,
+.address-form button,
+.edit-form button,
+.create-btn {
+  background-color: 343a40;
+  color: edf2f4;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+#name {
+  font-weight: bold;
+}
+
+.add-address i {
+  font-size: 6rem;
+  color: rgb(201, 199, 199);
+  margin: auto;
+}
+
+.add-address {
+  text-align: center;
+}
+
+.address-form > * {
+  margin-top: 1rem;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.address i {
+  font-size: 20px;
+  position: relative;
+  bottom: 140px;
+  left: 130px;
+}
+
+.products-table {
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns: 1fr 6fr 3fr 3fr 2fr 2fr 1fr 1fr;
+}
+
+.products-table thead,
+.products-table tbody,
+.products-table tr,
+.users-table thead,
+.users-table tbody,
+.users-table tr {
+  display: contents;
+}
+
+.products-table th,
+.products-table td,
+.users-table th,
+.users-table td {
+  padding: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.products-table th,
+.users-table th {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  margin: 0;
+  background-color: 343a40;
+  color: edf2f4;
+}
+
+.products-table tr:nth-child(even) td,
+.users-table tr:nth-child(even) td {
+  background: rgb(228, 226, 226);
+}
+
+.create-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.users-table {
+  display: grid;
+  border-collapse: collapse;
+  grid-template-columns: 1fr 2fr 2fr 4fr 3fr 2fr 2fr;
+}
+
+.img-upload {
+  margin: 8px 0px 8px 0;
+  background-color: white;
+}
+
+.line-items {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 1px 0;
+  margin: 10px;
+  padding: 5px;
+}
+
+.line-items > * {
+  width: 120px;
+  font-size: small;
+  line-height: normal;
+}
+
+.order {
+  display: flex;
+}
+
+.orders {
+  margin-bottom: 5rem;
+  list-style-type: none;
+  line-height: 10px;
+}
